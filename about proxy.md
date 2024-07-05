@@ -9,7 +9,7 @@ sudo apt-get -o Acquire::http::proxy="http://127.0.0.1:7890/" update
 ```bash
 sudo touch /etc/systemd/system/docker.service.d/http-proxy.conf
 ```
-2. 将代理信息依照下面的格式写入代理信息
+2. 将代理信息依照下面的格式写入
 ```config
 [Service]
 Environment="HTTP_PROXY=http://192.168.6.200:3128/"
